@@ -74,6 +74,9 @@ Heroku CLI:
     - heroku open -a <heroku_app>
     - heroku logs -a <heroku_app>
 
+AWS EC2 Instance:
+================
+Created EC2 Instace VM ubuntu(20) and open aws terminal follow the commands from aws_instance_cmds.txt
 
 
 References:
