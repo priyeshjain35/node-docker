@@ -60,6 +60,20 @@ Redis-cli: docker exec -it <redis_container> redis-cli
 listing: all available sessions: KEYS *
          Details of one session: GET <key>
 
+Deploying:
+=========
+Heroku CLI:
+    - Install Heroku on your local machine
+    - Open command prompt with containing source code
+    - herko login
+    - heroku container:login
+    - heroku create
+    - docker build -t registry.heroku.com/<heroku_app_from_heroku_create_cmd>/web .
+    - docker push registry.heroku.com/<heroku_app>/web
+    - heroku container:release web -a <herok_app>
+    - heroku open -a <heroku_app>
+    - heroku logs -a <heroku_app>
+
 
 
 References:
